@@ -1,0 +1,65 @@
+[
+  {
+    "layer": "convolution",
+    "level": 1,
+    "number_of_filters": 16,
+    "filter_size": 5,
+    "input_channels": 1,
+    "std_dev": 1,
+    "pooling": "no"
+
+  },
+  {
+    "layer": "convolution",
+    "level": 2,
+    "number_of_filters": 32,
+    "filter_size": 5,
+    "std_dev": 0.5,
+    "pooling": "yes"
+
+  },
+  {
+    "layer": "fully connected",
+    "level": 1,
+    "number_of_inputs": 9216,
+    "number_of_outputs": 1024,
+    "std_dev": 1
+
+  },
+  {
+    "layer": "fully connected",
+    "level": 2,
+    "number_of_inputs": 1024,
+    "number_of_outputs": 512,
+    "std_dev": 0.5
+  },
+  {
+    "layer": "fully connected",
+    "level": 3,
+    "number_of_inputs": 512,
+    "number_of_outputs": 256,
+    "std_dev": 0.5
+  },
+  {
+    "layer": "fully connected",
+    "level": 4,
+    "number_of_inputs": 256,
+    "number_of_outputs": 128,
+    "std_dev": 0.5
+  },
+  {
+    "layer": "fully connected",
+    "level": 5,
+    "number_of_inputs": 128,
+    "number_of_outputs": 64,
+    "std_dev": 0.5
+  },
+  {
+    "layer": "fully connected",
+    "level": 6,
+    "number_of_inputs": 64,
+    "number_of_outputs": 7,
+    "std_dev": 0.5
+  }
+
+]
